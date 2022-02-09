@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_reminder_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remind me about"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reminder_text">
+
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:id="@+id/ic_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="06:12 PM" />
+        <ImageView
+            android:id="@+id/ic_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_calender" />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="12 June, 2200" />
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@color/primaryColor"/>
+
+
+
+
+</RelativeLayout>

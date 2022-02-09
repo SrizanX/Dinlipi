@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/notesFragment"
+        android:title="@string/notes"
+        android:icon="@drawable/ic_notes"/>
+    <item
+        android:id="@+id/reminderFragment"
+        android:title="@string/reminders"
+        android:icon="@drawable/ic_reminder"/>
+    <item
+        android:id="@+id/voiceNotesFragment"
+        android:title="@string/voice_notes"
+        android:icon="@drawable/ic_voice_notes"/>
+</menu>

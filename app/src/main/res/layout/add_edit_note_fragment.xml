@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.srizan.dinlipi.ui.notes.edit.AddEditNoteViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="16dp">
+                    <EditText
+                        android:id="@+id/title_edit_text"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title_hint"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLines="1"
+                        android:text="@{viewModel.note.title}"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <EditText
+                        android:id="@+id/text_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/description_hint"
+                        android:imeOptions="flagNoExtractUi"
+                        android:text="@{viewModel.note.text}" />
+                </LinearLayout>
+            </ScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

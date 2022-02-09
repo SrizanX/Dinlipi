@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dinlipi</string>
+    <string name="notes">Notes</string>
+    <string name="reminders">Reminders</string>
+    <string name="voice_notes">Voice Notes</string>
+    <string name="dummy_note">Lorem</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Enter your note here</string>
+    <string name="save">Save</string>
+    <string name="delete_note">Delete Note</string>
+</resources>
