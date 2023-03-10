@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/notesFragment"
-        android:name="com.srizan.dinlipi.ui.notes.NotesFragment"
+        android:name="com.bitflecks.dinlipi.ui.notes.NotesFragment"
         android:label="@string/notes"
         tools:layout="@layout/notes_fragment" >
         <action
@@ -15,34 +15,50 @@
             app:destination="@id/addEditNoteFragment"
             app:popUpToInclusive="false" />
     </fragment>
+
+
     <fragment
         android:id="@+id/reminderFragment"
-        android:name="com.srizan.dinlipi.ui.reminder.ReminderFragment"
+        android:name="com.bitflecks.dinlipi.reminder.list.ReminderFragment"
         android:label="@string/reminders"
-        tools:layout="@layout/reminder_fragment" />
+        tools:layout="@layout/reminder_fragment" >
+        <action
+            android:id="@+id/action_reminderFragment_to_reminderEditorFragment"
+            app:destination="@id/reminderEditorFragment" />
+    </fragment>
+
+
     <fragment
         android:id="@+id/voiceNotesFragment"
-        android:name="com.srizan.dinlipi.ui.voice.VoiceNotesFragment"
+        android:name="com.bitflecks.dinlipi.voice_notes.list.VoiceNotesFragment"
         android:label="@string/voice_notes"
         tools:layout="@layout/voice_notes_fragment" >
         <action
             android:id="@+id/action_voiceNotesFragment_to_recorderFragment"
             app:destination="@id/recorderFragment" />
     </fragment>
+
+
     <fragment
         android:id="@+id/addEditNoteFragment"
-        android:name="com.srizan.dinlipi.ui.notes.edit.AddEditNoteFragment"
+        android:name="com.bitflecks.dinlipi.ui.notes.edit.AddEditNoteFragment"
         android:label="Edit Note"
         tools:layout="@layout/add_edit_note_fragment">
         <argument
             android:name="note"
             android:defaultValue="@null"
-            app:argType="com.srizan.dinlipi.model.Note"
+            app:argType="com.bitflecks.dinlipi.model.Note"
             app:nullable="true" />
     </fragment>
+
+
     <fragment
         android:id="@+id/recorderFragment"
-        android:name="com.srizan.dinlipi.ui.recorder.RecorderFragment"
-        android:label="recorder_fragment"
+        android:name="com.bitflecks.voice_notes.recorder.RecorderFragment"
+        android:label="Recorder"
         tools:layout="@layout/recorder_fragment" />
+    <fragment
+        android:id="@+id/reminderEditorFragment"
+        android:name="com.bitflecks.dinlipi.reminder.editor.ReminderEditorFragment"
+        android:label="Reminder Editor" />
 </navigation>

@@ -4,7 +4,7 @@
         <import type="android.view.View" />
         <variable
             name="viewModel"
-            type="com.srizan.dinlipi.ui.notes.edit.AddEditNoteViewModel" />
+            type="com.bitflecks.dinlipi.ui.notes.edit.AddEditNoteViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

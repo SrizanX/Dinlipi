@@ -3,7 +3,7 @@
     <data>
         <variable
             name="note"
-            type="com.srizan.dinlipi.model.Note" />
+            type="com.bitflecks.dinlipi.model.Note" />
         <variable
             name="noteClickListener"
             type="android.view.View.OnClickListener" />
